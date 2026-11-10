@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>MetroMate Classifieds – One Call. All Solutions.</title>
+<meta name="description" content="Post free ads and find 30 trusted local services in Surat: plumbers, cabs, salons, repairs, catering and more.">
+<link rel="canonical" href="https://desidevloper.com/classifieds/">
+<meta name="theme-color" content="#1a1410"><meta name="mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-capable" content="yes"><meta name="apple-mobile-web-app-title" content="MetroMate">
+<link rel="manifest" href="data:application/manifest+json,%7B%22name%22:%22MetroMate%22,%22short_name%22:%22MetroMate%22,%22start_url%22:%22.%22,%22display%22:%22standalone%22,%22background_color%22:%22%231a1410%22,%22theme_color%22:%22%23e8750a%22%7D">
+<style>
+:root{--bg:#fff8ee;--card:#fff;--ink:#1c1712;--mute:#6d6256;--line:#eadfce;--amber:#e8750a;--amber2:#c25d00;--hero:#1a1410;--herotx:#fff;--chip:#fff1de;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px)}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0b08;--card:#1a1511;--ink:#f6efe6;--mute:#a99c8d;--line:#33291f;--chip:#2a2016}}
+:root[data-theme="dark"]{--bg:#0e0b08;--card:#1a1511;--ink:#f6efe6;--mute:#a99c8d;--line:#33291f;--chip:#2a2016}
+*{box-sizing:border-box}html{scroll-padding-top:env(safe-area-inset-top,0px)}
+body{margin:0;background:var(--bg);color:var(--ink);font:15px/1.5 system-ui,-apple-system,"Segoe UI",Roboto,sans-serif}
+a{color:var(--amber2);text-decoration:none}a:hover{text-decoration:underline}
+.wrap{max-width:1180px;margin:0 auto;padding:0 14px}
+header{background:var(--hero);color:var(--herotx);position:sticky;top:env(safe-area-inset-top,0px);z-index:5}
+.nav{display:flex;align-items:center;gap:12px;padding:10px 0;flex-wrap:wrap}
+.logo{font-weight:900;font-size:22px;letter-spacing:1px;color:#fff}.logo b{color:var(--amber)}
+.nav .sp{flex:1}
+.btn{background:var(--amber);color:#fff;border:0;border-radius:8px;padding:9px 16px;font-weight:700;cursor:pointer;font-size:14px}
+.btn:hover{background:var(--amber2);text-decoration:none}
+.btn.ghost{background:transparent;border:1px solid var(--line);color:var(--ink)}
+.nav a.l{color:#e9dfd2;font-size:14px;cursor:pointer}
+.hero{background:linear-gradient(135deg,#1a1410,#3a2108);color:#fff;padding:28px 0 22px}
+.hero h1{margin:0 0 4px;font-size:clamp(24px,4vw,36px)}.hero p{margin:0 0 16px;color:#ddc9ae}
+.search{display:grid;grid-template-columns:1.6fr 1.2fr 1fr auto;gap:8px}
+.search input,.search select,.f input,.f select,.f textarea{width:100%;padding:11px;border-radius:8px;border:1px solid var(--line);background:var(--card);color:var(--ink);font:inherit}
+.stats{display:flex;gap:18px;flex-wrap:wrap;margin-top:14px;font-size:13px;color:#ddc9ae}
+h2{font-size:20px;margin:26px 0 12px}
+.grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(150px,1fr));gap:10px}
+.cat{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;cursor:pointer;text-align:center}
+.cat:hover,.cat.on{border-color:var(--amber);box-shadow:0 2px 10px rgba(232,117,10,.18)}
+.cat i{font-style:normal;font-size:28px;display:block}.cat span{font-weight:600;font-size:13px;display:block;margin-top:4px}.cat small{color:var(--mute)}
+.ads{display:grid;grid-template-columns:repeat(auto-fill,minmax(260px,1fr));gap:12px}
+.ad{background:var(--card);border:1px solid var(--line);border-radius:12px;overflow:hidden;cursor:pointer;display:flex;flex-direction:column}
+.ad:hover{border-color:var(--amber)}
+.ad .im{height:96px;display:flex;align-items:center;justify-content:center;font-size:44px;background:var(--chip);position:relative}
+.ad .bd{padding:10px 12px}.ad h3{margin:0 0 2px;font-size:15px}.ad .m{color:var(--mute);font-size:13px}
+.price{font-weight:800;color:var(--amber2)}
+.tag{position:absolute;top:8px;left:8px;font-size:11px;font-weight:800;padding:2px 8px;border-radius:99px;background:var(--amber);color:#fff}
+.tag.u{left:auto;right:8px;background:#c62828}
+.ver{color:#2e7d32;font-size:12px;font-weight:700}
+.layout{display:grid;grid-template-columns:230px 1fr;gap:18px}
+.side{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;align-self:start}
+.side h4{margin:0 0 8px}.side label{display:block;font-size:13px;margin:5px 0;cursor:pointer}
+.chips{display:flex;gap:8px;flex-wrap:wrap;margin:6px 0 12px}
+.chip{background:var(--chip);border:1px solid var(--line);border-radius:99px;padding:5px 12px;font-size:13px;cursor:pointer}
+.chip:hover{border-color:var(--amber)}
+.crumb{font-size:13px;color:var(--mute);margin:14px 0 0}
+.row{display:flex;gap:12px;background:var(--card);border:1px solid var(--line);border-radius:12px;padding:10px;margin-bottom:10px;cursor:pointer}
+.row:hover{border-color:var(--amber)}.row .im{width:92px;min-height:84px;border-radius:10px;background:var(--chip);display:flex;align-items:center;justify-content:center;font-size:38px;flex:none;position:relative}
+.row.fe{border-left:4px solid var(--amber)}
+.modal{position:fixed;inset:0;background:rgba(0,0,0,.6);display:none;align-items:center;justify-content:center;z-index:20;padding:14px}
+.modal.on{display:flex}.box{background:var(--card);border-radius:14px;max-width:560px;width:100%;max-height:90vh;overflow:auto;padding:18px;border:1px solid var(--line)}
+.box h3{margin-top:0}.f label{display:block;font-weight:600;font-size:13px;margin:10px 0 4px}
+.x{float:right;cursor:pointer;font-size:22px;border:0;background:none;color:var(--ink)}
+.promo{background:linear-gradient(90deg,#3a2108,#6a3a0c);color:#fff;border-radius:12px;padding:14px;display:flex;gap:12px;align-items:center;justify-content:space-between;flex-wrap:wrap;margin:18px 0}
+.dev section{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:4px 16px 12px;margin-bottom:12px}
+.dev code{background:var(--chip);padding:1px 5px;border-radius:4px;font-size:13px}
+.dev table{width:100%;border-collapse:collapse;font-size:13px}.dev td,.dev th{border-bottom:1px solid var(--line);padding:6px;text-align:left;vertical-align:top}
+.scroll{overflow-x:auto}
+footer{background:var(--hero);color:#cdbfae;margin-top:30px;padding:22px 0;font-size:13px}
+footer a{color:#ffb35c}.fg{display:flex;gap:24px;flex-wrap:wrap;justify-content:space-between}
+#toast{position:fixed;bottom:calc(16px + env(safe-area-inset-bottom,0px));left:50%;transform:translateX(-50%);background:#2e7d32;color:#fff;padding:10px 18px;border-radius:8px;display:none;z-index:30}
+.tabbar{display:none}.dl{grid-template-columns:1fr 300px!important}
+@media(max-width:760px){.search{grid-template-columns:1fr}.layout,.dl{grid-template-columns:1fr!important}.hd{display:none!important}
+.grid{grid-template-columns:repeat(3,1fr);gap:8px}.cat{padding:8px 4px}.cat i{font-size:24px}.cat span{font-size:12px}
+.hero{padding:18px 0}.ads{grid-template-columns:1fr 1fr;gap:8px}.ad .im{height:76px}.ad h3{font-size:13px}.row .im{width:70px;min-height:70px;font-size:30px}
+body{padding-bottom:64px}.nav{padding:8px 0}
+.tabbar{display:flex;position:fixed;bottom:0;left:0;right:0;background:var(--hero);z-index:15;padding-bottom:env(safe-area-inset-bottom,0px);border-top:1px solid #3a2a18}
+.tabbar a{flex:1;text-align:center;color:#e9dfd2;font-size:11px;padding:7px 0;cursor:pointer;text-decoration:none}.tabbar a i{display:block;font-style:normal;font-size:20px}
+.tabbar a.pp i{background:var(--amber);border-radius:50%;width:38px;height:38px;line-height:38px;margin:-16px auto 0;color:#fff}
+#toast{bottom:84px}}
+</style>
+</head>
+<body>
+<header><div class="wrap nav">
+<a class="logo" href="#home">METRO<b>MATE</b></a><span class="sp"></span>
+<a class="l hd" onclick="go('home')">Browse</a><a class="l hd" onclick="go('dev')">Developer notes</a><a class="l" onclick="installApp()">📲 Get app</a>
+<a class="l hd" href="tel:+919727413309">📞 97274 13309</a>
+<button class="btn hd" onclick="openPost()">＋ Post free ad</button>
+</div></header>
+
+<main id="app"></main>
+
+<footer><div class="wrap fg">
+<div><b style="color:#fff">MetroMate</b> – One call. All solutions.<br>Website: <a href="https://www.metromateservices.com">metromateservices.com</a><br>WhatsApp: 97274 13309<br><a href="mailto:support@metromateservices.com">support@metromateservices.com</a></div>
+<div>Follow: <a href="https://instagram.com/metromate.services" rel="noopener">Instagram</a> · <a href="https://linkedin.com/company/metro-mate-services" rel="noopener">LinkedIn</a><br>Popular: <a onclick="pick(10)">Plumber in Surat</a> · <a onclick="pick(26)">Tiffin in Surat</a> · <a onclick="pick(12)">AC repair in Surat</a></div>
+<div>Powered by <a href="https://sntl84.com" rel="noopener">SNTL84</a><br>Systems that scale. Results that last.<br><a onclick="dev()">Developer notes</a></div>
+</div></footer>
+
+<div class="modal" id="m"><div class="box" id="mb"></div></div>
+<div id="toast"></div>
+<nav class="tabbar"><a onclick="home()"><i>🏠</i>Home</a><a onclick="home();setTimeout(()=>document.querySelector('.grid').scrollIntoView(),60)"><i>▦</i>Categories</a><a class="pp" onclick="openPost()"><i>＋</i>Post ad</a><a href="tel:+919727413309"><i>📞</i>Call</a><a onclick="installApp()"><i>📲</i>Get app</a></nav>
+
+<script>
+const C=("📱|Utility Recharge|Need DTH recharge and electricity bill payment help;📈|Shareholding Referral|Want to refer a business and earn revenue share;🍽️|Restaurant Offers|Looking for dine-in deals near Adajan;🚕|Cab Drivers|Need a cab driver for daily office pickup;🛺|Rickshaw Drivers|Auto rickshaw partnership for Rapido rides;✈️|Tours & Travel|Goa holiday package for 4 people in December;🚖|Private Taxi|Airport transfer from Surat to Ahmedabad;💄|Beauty Parlour|Bridal makeup booking at home;💇|Salons|Haircut and spa for two, weekend slot;🔧|Plumber|Bathroom pipe leakage, need visit today;⚡|Electrician|New wiring for a 2BHK flat;❄️|AC Repair|Split AC not cooling, needs gas refill;📦|Courier|Send documents to Mumbai same day;🚚|Logistics|Cargo transport Surat to Jaipur, 5 tonnes;📣|Digital Marketing|Instagram and lead-generation ads for my shop;🛡️|LIC Insurance|Term plan advice for a family of four;💻|Laptop & PC Repair|MacBook screen replacement quote;📲|Mobile Selling|Looking for a used iPhone with warranty;🛠️|Mobile Repair|Screen and battery replacement, same day;🧾|ITR & Tax|Income tax return filing for salaried person;👥|Placement|Hiring sales executives for FMCG company;📄|Resume & Collab|Need a professional resume and LinkedIn profile;🛒|FMCG Stockist|Retail supply of groceries and FMCG products;🏍️|Two Wheeler|Used Activa in good condition under ₹45,000;🚗|Four Wheeler|Second-hand hatchback with service history;🍱|Tiffin Sellers|Monthly home-style tiffin, lunch only;💂|Security Guards|Two guards for a society night shift;👷|Manpower|Need 10 skilled labourers for a project;🥘|Catering|Corporate lunch for 80 people;🛋️|Interior|Office interior design and setup quote").split(";").map((s,i)=>{const[a,b,c]=s.split("|");return{id:i+1,ic:a,n:b,q:c}});
+const A=["Adajan","Vesu","Varachha","Piplod","Athwa","Katargam","Udhna"];
+const L=[
+{id:1,c:10,t:"24x7 Plumber – leakage, fitting, bathroom work",a:"Adajan",p:"₹300 visit",f:1,u:1,v:1,by:"Rajesh Plumbing Works",d:"Verified plumber with 10 years’ experience. Taps, geysers, pipelines and bathroom fittings. Same-day service across Surat."},
+{id:2,c:12,t:"AC repair, gas refill & annual maintenance",a:"Vesu",p:"₹499 onwards",f:1,v:1,by:"CoolCare Services",d:"All brands. Installation, gas refilling, deep cleaning and AMC plans for homes and offices."},
+{id:3,c:26,t:"Home-style tiffin – veg, monthly plan",a:"Piplod",p:"₹3,200/month",f:1,v:1,by:"Annapurna Tiffin",d:"Fresh lunch and dinner delivered to your door. Trial tiffin available. Jain options on request."},
+{id:4,c:29,t:"Event & corporate catering up to 500 guests",a:"Athwa",p:"₹250/plate",v:1,by:"Shree Caterers",d:"Gujarati, Punjabi and South Indian menus. Live counters and decoration support."},
+{id:5,c:7,t:"Private taxi – airport & outstation",a:"Varachha",p:"₹12/km",u:1,v:1,by:"Ramdev Cab Service",d:"Sedan and SUV available. Surat–Mumbai, Surat–Ahmedabad and local trips. Professional drivers."},
+{id:6,c:19,t:"Mobile screen & battery repair – 30 min",a:"Katargam",p:"₹599 onwards",v:1,by:"FixIt Mobiles",d:"Screen, battery, charging port and software issues. 3-month warranty on parts."},
+{id:7,c:8,t:"Bridal makeup & beauty parlour at home",a:"Vesu",p:"₹4,500 onwards",f:1,by:"Glow Studio",d:"HD and airbrush bridal makeup, hair styling and pre-bridal packages."},
+{id:8,c:11,t:"Electrician – wiring, switchboards, inverter",a:"Udhna",p:"₹250 visit",v:1,by:"Sai Electricals",d:"New wiring, MCB, fan, light and inverter installation for flats and shops."},
+{id:9,c:20,t:"ITR filing & GST consultation",a:"Athwa",p:"₹799 onwards",v:1,by:"Shah & Associates",d:"Salaried, business and capital gains returns filed. Notices handled."},
+{id:10,c:28,t:"Skilled & unskilled manpower supply",a:"Udhna",p:"₹600/day",by:"Labour Connect",d:"Masons, helpers, packers and loaders available at short notice."},
+{id:11,c:30,t:"Home & office interior design",a:"Piplod",p:"Free site visit",f:1,v:1,by:"Urban Nest Interiors",d:"Modular kitchen, wardrobes, false ceiling and complete turnkey projects."},
+{id:12,c:17,t:"MacBook, iMac & Windows laptop repair",a:"Adajan",p:"₹399 diagnosis",by:"TechDoc Surat",d:"Chip-level repair, screen and keyboard replacement, data recovery."},
+{id:13,c:27,t:"Trained security guards for society & office",a:"Varachha",p:"₹16,500/guard",v:1,by:"Shield Force",d:"Uniformed, verified guards for 8 or 12-hour shifts. Event security available."},
+{id:14,c:24,t:"Used Activa 2019 – single owner",a:"Katargam",p:"₹42,000",by:"Individual seller",d:"Well maintained, all papers clear, recently serviced. Test ride welcome."}];
+let S={cat:0,q:"",area:"",feat:0},mine=[];
+const $=id=>document.getElementById(id);
+const esc=s=>String(s).replace(/[&<>"]/g,m=>({"&":"&amp;","<":"&lt;",">":"&gt;",'"':"&quot;"}[m]));
+const cnt=id=>L.filter(x=>x.c==id).length;
+const ic=id=>C[id-1].ic;
+function show(h){$("app").innerHTML=h;window.scrollTo(0,0)}
+function toast(t){const e=$("toast");e.textContent=t;e.style.display="block";setTimeout(()=>e.style.display="none",2600)}
+function card(x){return `<div class="ad" onclick="detail(${x.id})"><div class="im">${ic(x.c)}${x.f?'<span class="tag">FEATURED</span>':''}${x.u?'<span class="tag u">URGENT</span>':''}</div><div class="bd"><h3>${esc(x.t)}</h3><div class="price">${esc(x.p)}</div><div class="m">📍 ${x.a}, Surat · ${C[x.c-1].n}</div>${x.v?'<div class="ver">✔ Verified professional</div>':''}</div></div>`}
+function row(x){return `<div class="row ${x.f?'fe':''}" onclick="detail(${x.id})"><div class="im">${ic(x.c)}${x.f?'<span class="tag">AD</span>':''}</div><div><h3 style="margin:0">${esc(x.t)}</h3><div class="price">${esc(x.p)}</div><div class="m">📍 ${x.a}, Surat · ${C[x.c-1].n} · ${esc(x.by)} ${x.v?'<span class="ver">✔</span>':''}</div><div class="m">${esc(x.d).slice(0,110)}…</div></div></div>`}
+function home(){S={cat:0,q:"",area:"",feat:0};location.hash="home";
+show(`<section class="hero"><div class="wrap"><h1>One call. All solutions.</h1><p>Find trusted local services in Surat – or post your free ad in 2 minutes.</p>
+<div class="search"><input id="q" placeholder="What are you looking for? e.g. plumber, tiffin" onkeydown="if(event.key=='Enter')doSearch()"><select id="cs"><option value="0">All categories</option>${C.map(c=>`<option value="${c.id}">${c.ic} ${c.n}</option>`).join("")}</select><select id="ar"><option value="">All Surat</option>${A.map(a=>`<option>${a}</option>`).join("")}</select><button class="btn" onclick="doSearch()">Search</button></div>
+<div class="stats"><span>✔ Verified professionals</span><span>⏱ 24x7 quick response</span><span>₹ Affordable &amp; transparent</span><span>📞 Call/WhatsApp 97274 13309</span></div></div></section>
+<div class="wrap"><h2>Browse 30 priority services</h2><div class="grid">${C.map(c=>`<div class="cat" onclick="pick(${c.id})"><i>${c.ic}</i><span>${c.n}</span><small>${cnt(c.id)} ads</small></div>`).join("")}</div>
+<h2>⭐ Featured ads</h2><div class="ads">${L.filter(x=>x.f).map(card).join("")}</div>
+<div class="promo"><div><b>Want your ad on top?</b><br>Featured, Urgent and Top-of-category placements get up to 10x more enquiries.</div><button class="btn" onclick="openPost()">Promote my ad</button></div>
+<h2>Latest ads</h2><div class="ads">${L.slice(4).map(card).join("")}</div></div>`)}
+function doSearch(){S.q=$("q").value.trim();S.cat=+$("cs").value;S.area=$("ar").value;results()}
+function pick(id){S={cat:id,q:"",area:"",feat:0};results()}
+function results(){const c=S.cat?C[S.cat-1]:null;
+let r=L.filter(x=>(!S.cat||x.c==S.cat)&&(!S.area||x.a==S.area)&&(!S.feat||x.f)&&(!S.q||(x.t+x.d+C[x.c-1].n).toLowerCase().includes(S.q.toLowerCase())));
+r.sort((a,b)=>(b.f||0)-(a.f||0));location.hash=c?"category-"+c.n.toLowerCase().replace(/[^a-z]+/g,"-"):"search";
+show(`<div class="wrap"><div class="crumb"><a onclick="home()">Home</a> › Surat${c?' › '+c.n:''}${S.q?' › “'+esc(S.q)+'”':''}</div>
+<h2 style="margin-top:8px">${c?c.ic+' '+c.n+' in Surat':'Search results'} <small style="color:var(--mute);font-weight:400">(${r.length} ads)</small></h2>
+${c?`<div class="m" style="color:var(--mute)">Popular enquiries</div><div class="chips"><span class="chip" onclick="enquire(0,'${c.id}')">💬 ${c.q}</span><span class="chip" onclick="openPost(${c.id})">＋ Post ad in ${c.n}</span></div>`:''}
+<div class="layout"><aside class="side"><h4>Category</h4><select onchange="S.cat=+this.value;results()" style="width:100%;padding:8px"><option value="0">All</option>${C.map(x=>`<option value="${x.id}" ${x.id==S.cat?'selected':''}>${x.n}</option>`).join("")}</select>
+<h4 style="margin-top:12px">Area</h4>${["",...A].map(a=>`<label><input type="radio" name="ar" ${S.area==a?'checked':''} onchange="S.area='${a}';results()"> ${a||'All Surat'}</label>`).join("")}
+<h4 style="margin-top:12px">Show</h4><label><input type="checkbox" ${S.feat?'checked':''} onchange="S.feat=this.checked?1:0;results()"> Featured only</label></aside>
+<div>${r.length?r.map(row).join(""):'<div class="row">No ads yet. Be the first to <a onclick="openPost('+S.cat+')">post one free</a>.</div>'}
+<div class="promo"><div><b>Can’t find it?</b><br>Call or WhatsApp 97274 13309 and we connect you.</div><a class="btn" href="https://wa.me/919727413309">WhatsApp us</a></div></div></div></div>`)}
+function detail(id){const x=L.find(y=>y.id==id),c=C[x.c-1];location.hash="ad-"+id;
+const sim=L.filter(y=>y.c==x.c&&y.id!=id).concat(L.filter(y=>y.c!=x.c&&y.f)).slice(0,3);
+show(`<div class="wrap"><div class="crumb"><a onclick="home()">Home</a> › <a onclick="pick(${c.id})">${c.n}</a> › ${esc(x.t)}</div>
+<div class="layout dl" style="margin-top:12px"><div class="ad" style="cursor:default"><div class="im" style="height:170px;font-size:80px">${c.ic}${x.f?'<span class="tag">FEATURED</span>':''}</div><div class="bd"><h2 style="margin:0">${esc(x.t)}</h2><div class="price" style="font-size:20px">${esc(x.p)}</div><div class="m">📍 ${x.a}, Surat · Ad ID MM${1000+x.id}</div><p>${esc(x.d)}</p>
+<p><a href="https://example.com" rel="nofollow ugc noopener" target="_blank">🔗 Visit advertiser website</a> (backlink)</p><button class="btn ghost" onclick="share(${x.id})">Share</button> <button class="btn ghost" onclick="toast('Ad reported to moderators')">Report ad</button></div></div>
+<aside class="side"><b>${esc(x.by)}</b> ${x.v?'<span class="ver">✔ Verified</span>':''}<div class="m" style="color:var(--mute)">Member since 2026</div>
+<button class="btn" style="width:100%;margin:10px 0 6px" onclick="toast('Number: 97274 13309 (demo)')">📞 Show phone number</button><a class="btn" style="display:block;text-align:center;margin-bottom:6px" href="https://wa.me/919727413309">WhatsApp</a><button class="btn ghost" style="width:100%" onclick="enquire(${x.id},${c.id})">✉ Send enquiry</button></aside></div>
+<h2>Similar &amp; featured ads</h2><div class="ads">${sim.map(card).join("")}</div></div>`)}
+function enquire(id,cid){const c=C[cid-1];$("mb").innerHTML=`<button class="x" onclick="closeM()">×</button><h3>Send enquiry – ${c.n}</h3><div class="f"><label>Your name</label><input id="en"><label>Phone / WhatsApp</label><input id="ep" inputmode="tel"><label>Your message</label><textarea id="em" rows="3">${c.q}</textarea></div><br><button class="btn" onclick="sendEnq()">Send enquiry</button>`;$("m").classList.add("on")}
+function sendEnq(){if(!$("ep").value.trim())return toast("Please add a phone number");closeM();toast("Enquiry sent – the advertiser will call you")}
+function openPost(cid){$("mb").innerHTML=`<button class="x" onclick="closeM()">×</button><h3>Post a free ad</h3><div class="f"><label>Category</label><select id="pc">${C.map(c=>`<option value="${c.id}" ${c.id==cid?'selected':''}>${c.ic} ${c.n}</option>`).join("")}</select><label>Title</label><input id="pt" maxlength="70" placeholder="e.g. 24x7 plumber in Adajan"><label>Description</label><textarea id="pd" rows="3"></textarea><label>Price / rate</label><input id="pp"><label>Area</label><select id="pa">${A.map(a=>`<option>${a}</option>`).join("")}</select><label>Your website (optional backlink)</label><input id="pw" placeholder="https://"><label>Promote</label><select id="pf"><option value="0">Free listing</option><option value="1">⭐ Featured (₹199 / 7 days)</option><option value="2">🔥 Urgent + Featured (₹349 / 7 days)</option></select></div><br><button class="btn" onclick="savePost()">Publish ad</button>`;$("m").classList.add("on")}
+function savePost(){const t=$("pt").value.trim();if(t.length<5)return toast("Add a title");const f=+$("pf").value;L.unshift({id:L.length+1,c:+$("pc").value,t,a:$("pa").value,p:$("pp").value||"Contact for price",f:f>0?1:0,u:f==2?1:0,by:"You",d:$("pd").value||"No description.",v:0});closeM();S.cat=+L[0].c;results();toast("Ad published (demo)")}
+function closeM(){$("m").classList.remove("on")}
+$("m").addEventListener("click",e=>{if(e.target.id=="m")closeM()});
+function share(id){const u="https://desidevloper.com/classifieds/?ad="+id;navigator.clipboard&&navigator.clipboard.writeText(u).catch(()=>{});toast("Link copied: "+u)}
+function installApp(){$("mb").innerHTML=`<button class="x" onclick="closeM()">×</button><h3>📲 Get the MetroMate app</h3><p>Install it on your phone in one tap – it opens full-screen like a normal app.</p><p><b>Android (Chrome):</b> tap ⋮ menu → <i>Install app</i> or <i>Add to Home screen</i>.</p><p><b>iPhone (Safari):</b> tap Share → <i>Add to Home Screen</i>.</p><p><b>Desktop:</b> click the install icon in the address bar.</p><p style="color:var(--mute)">Play Store and App Store versions are in the developer plan (see Developer notes).</p><a class="btn" href="tel:+919727413309">📞 Call 97274 13309</a>`;$("m").classList.add("on")}
+function go(v){v=="dev"?dev():home()}
+function dev(){location.hash="dev";show(`<div class="wrap dev"><h2>Developer brief – MetroMate classifieds</h2>
+<section><h3>1. Goal</h3><p>A Gumtree-style classifieds and enquiry site for Surat, built around the 30 launch services. Every element on this page is clickable, and this file is a working front-end prototype with sample data. Replace the in-memory arrays with a real database and API.</p></section>
+<section><h3>2. Pages and click flow</h3><div class="scroll"><table><tr><th>Page</th><th>Clickable parts</th><th>SEO URL</th></tr>
+<tr><td>Home</td><td>Search bar, 30 category tiles, featured ads, Post ad button</td><td><code>/</code></td></tr>
+<tr><td>Category results</td><td>Category/area/featured filters, popular enquiry chips, ad rows</td><td><code>/surat/plumber</code>, <code>/surat/plumber/adajan</code></td></tr>
+<tr><td>Ad detail</td><td>Show phone, WhatsApp, Send enquiry, Share, Report, advertiser website</td><td><code>/ad/1001-plumber-adajan</code></td></tr>
+<tr><td>Post ad modal</td><td>Category, title, description, price, area, website, promotion option</td><td><code>/post-ad</code></td></tr>
+<tr><td>Advertiser profile</td><td>All ads, verified badge, reviews</td><td><code>/business/rajesh-plumbing</code></td></tr></table></div></section>
+<section><h3>3. Sample enquiries (one per category)</h3><p>Each category page shows a popular-enquiry chip that pre-fills the message box. Store these in a <code>category.sample_enquiry</code> column. The 30 are in the <code>C</code> array of this file.</p></section>
+<section><h3>4. Features</h3><ul><li><b>Add listing:</b> free basic ad; moderation queue; OTP phone verification; up to 5 photos; auto-expire after 30 days with a renew button.</li>
+<li><b>Featured ads:</b> <code>featured_until</code> date; shown on Home, top of category, orange border and FEATURED badge. Sample prices ₹199 and ₹349 per 7 days (set your own).</li>
+<li><b>Urgent badge</b> and <b>Top-of-category</b> as separate paid add-ons; pay by Razorpay/UPI.</li>
+<li><b>Enquiries:</b> form saves to the database, emails the advertiser and sends a WhatsApp alert; you keep a lead log for upsell.</li>
+<li><b>Search and filters:</b> keyword, category, area, price, verified, featured. Use Postgres full-text or Meilisearch.</li>
+<li><b>Verified badge:</b> manual KYC check, matches the “Verified professionals” promise.</li>
+<li><b>Admin panel:</b> approve or reject ads, manage categories, featured slots, reports, payments, leads.</li></ul></section>
+<section><h3>5. Backlinks and SEO</h3><ul><li>Advertiser website link on each ad: <code>rel="nofollow ugc noopener"</code> by default; allow dofollow only on paid Featured ads.</li>
+<li>Business profile pages link out to the advertiser site and link back in the footer: “Powered by SNTL84”.</li>
+<li>Landing pages per category and area (“Plumber in Adajan, Surat”) with unique titles, meta descriptions, canonical tags and <code>LocalBusiness</code> / <code>Offer</code> JSON-LD.</li>
+<li>XML sitemap auto-updated, breadcrumb schema, internal links from footer “Popular” and “Similar ads”.</li>
+<li>Share buttons (WhatsApp, Facebook, copy link) and Google Business Profile, Instagram and LinkedIn links in the footer.</li></ul></section>
+<section><h3>6. Data model</h3><p><code>users</code>, <code>categories(id, name, slug, icon, sample_enquiry)</code>, <code>ads(id, user_id, category_id, title, description, price, area, website, status, featured_until, urgent_until, expires_at)</code>, <code>ad_images</code>, <code>enquiries(ad_id, name, phone, message)</code>, <code>payments</code>, <code>reports</code>.</p></section>
+<section><h3>7. Suggested stack and launch order</h3><p>Next.js + Postgres + S3-compatible storage + Razorpay + WhatsApp Cloud API. Launch order: categories and search, post ad, ad detail and enquiries, admin moderation, featured ads and payments, SEO pages.</p></section>
+<section><h3>8. Mobile version and app</h3><ul><li><b>Already in this prototype:</b> mobile-first layout, 3-column category grid, 2-column ad cards, bottom tab bar (Home, Categories, Post ad, Call, Get app), click-to-call, WhatsApp links, safe-area support for notched phones, light and dark theme.</li><li><b>Phase 1 – installable web app (PWA):</b> add <code>manifest.json</code> with 192px and 512px icons, a service worker for offline caching, an install prompt, and web push for new enquiries. Works on Android and iPhone with no store approval.</li><li><b>Phase 2 – store apps:</b> wrap the same site with Capacitor, or build in React Native or Flutter on the same API. Add native camera and gallery upload for ad photos, FCM push notifications, and deep links such as <code>/ad/1001</code> that open in the app.</li><li><b>Publishing:</b> Google Play first, then the Apple App Store. Both need developer accounts, so check current fees. Prepare icon, screenshots, privacy policy and a delete-account option, which both stores require.</li><li><b>Mobile rules:</b> tap targets at least 44px, images lazy-loaded and compressed, phone number reveal with one tap, and the Post ad button always visible.</li></ul></section><section><h3>9. Notes</h3><p>Prices, listings and advertisers on this page are placeholders for the demo. Add spam control (rate limits, captcha), a privacy policy and terms before going live.</p></section></div>`)}
+const h=location.hash;h=="#dev"?dev():home();
+</script>
+</body>
+</html>
